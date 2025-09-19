@@ -2,14 +2,27 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+# @app.route('/')
+# def index():
+#     return '''
+#         <html>
+#             <body>
+#                 <form action="/greet" method="POST">
+#                     Enter your name: <input type="text" name="username">
+#                     <input type = "submit" value="Submit">
+#                 </form>
+#             </body>
+#         </html>
+#     '''
+
 @app.route('/')
 def index():
     return '''
         <html>
             <body>
-                <form action"/greet" method="POST">
+                <form action="/greet" method="POST">
                     Enter your name: <input type="text" name="username">
-                    <input type = "submit" value="Submit">
+                    <input type="submit" value="Submit">
                 </form>
             </body>
         </html>
