@@ -1,0 +1,16 @@
+Steps to install Docker Desktop and Docker CLI
+
+Install Docker Desktop
+
+Sign in to Dockerhub and Docker Desktop
+Docker Desktop:
+> Check Docker install: cli -> "docker"
+> Pull the hello-world image and run it for testing purpose
+
+Build docker image: docker build -t flask-docker-demo.
+Run the container: docker run -p 5000:5000 flask-docker-demo
+Tag your image: docker tag flask-docker-demo AOS2685/flask-docker-demo:latest1
+Assure that you're logged in: docker login
+Push image to dockerhub: docker push AOS2685/flask-docker-demo:latest1
+Pull image from dockerhub: docker pull AOS2685/flask-docker-demo:latest1
+Run the Pulled image: docker run -p 5000:5000 AOS2685/flask-docker-demo:latest1
